@@ -10,8 +10,10 @@ export default {
 
 <style>
   body {
-    background: url("./assets/backgroud.jpg") no-repeat center top;
-    background-size: 100%;
+    /*background: url("./assets/backgroud.jpg") no-repeat center top;*/
+    /*background-size: 100%;*/
+    color: #fff;
+    background: #333;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
