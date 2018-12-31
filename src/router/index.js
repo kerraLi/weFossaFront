@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/components/Index'
+import Main from '@/components/Main'
 import Blog from '@/components/Blog'
 
 Vue.use(Router)
@@ -9,9 +9,9 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Index,
+      component: Main,
       meta: {
-        title: 'Index'
+        title: 'Main'
       }
     },
     {
