@@ -86,14 +86,14 @@ export default {
       // 总滚动长度 += 每次滚动长度
       this.scrollTop += event.srcElement.scrollTop - ptPageTop
 
-      if (this.scrollTop >= (ptPageTop + ptPages[this.scrollPageIndex].scrollHeight) / 30) {
+      if (this.scrollTop >= (ptPageTop + ptPages[this.scrollPageIndex].scrollHeight) * 2) {
         event.srcElement.scrollTop = ptPageTop + ptPages[this.scrollPageIndex].scrollHeight
         ptActPages[this.scrollPageIndex].setAttribute(
           'style',
           'animation: moveFromBottomFade .7s ease both;'
         )
         this.scrollPageIndex++
-      } else if (this.scrollTop <= (ptPageTop - ptPages[this.scrollPageIndex].scrollHeight) / 30) {
+      } else if (this.scrollTop <= (ptPageTop - ptPages[this.scrollPageIndex].scrollHeight) * 2) {
         event.srcElement.scrollTop = ptPageTop - ptPages[this.scrollPageIndex].scrollHeight
         ptActPages[this.scrollPageIndex].setAttribute(
           'style',
