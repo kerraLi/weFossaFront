@@ -59,9 +59,9 @@ export default {
       // 翻页滚动距离
       let disEveryPage = 0
       if (this.isMobile) {
-        disEveryPage = event.srcElement.clientHeight * 10
+        disEveryPage = event.srcElement.clientHeight * 50
       } else {
-        disEveryPage = event.srcElement.clientHeight / 20
+        disEveryPage = event.srcElement.clientHeight / 50
       }
 
       if (this.scrollTop > disEveryPage) {
